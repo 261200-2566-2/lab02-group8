@@ -19,7 +19,7 @@ public class AirPurifier {
         int maxNumber = Collections.max(numberOfEachModel);
         int index = numberOfEachModel.indexOf(maxNumber);
         return allModel.get(index);
-    };
+    }
     static int numberOfThisModel(String model){
         int index = allModel.indexOf(model);
         return numberOfEachModel.get(index);
