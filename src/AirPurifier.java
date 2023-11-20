@@ -3,7 +3,7 @@ import java.util.Collections;
 import java.util.Scanner;
 
 public class AirPurifier {
-    String model = "Pro";
+    String model ;
     String serialNo;
     boolean power = false;
     String mode = "auto";
@@ -13,7 +13,7 @@ public class AirPurifier {
     static ArrayList<Integer> numberOfEachModel = new ArrayList<>();
     static int modelCount(){
         return allModel.size();
-    };
+    }
     static int numberOfAPF = 0;
     static String mostPopularModel(){
         int maxNumber = Collections.max(numberOfEachModel);
@@ -106,9 +106,10 @@ public class AirPurifier {
         System.out.println("MostPopular = "+ AirPurifier.mostPopularModel() );
         System.out.println("How many AirPurifier = "+ AirPurifier.numberOfAPF );
         System.out.println("How many Pro model = "+ AirPurifier.numberOfThisModel("Pro"));
+        System.out.println("How many ProMax model = "+ AirPurifier.numberOfThisModel("ProMax"));
         System.out.println(" ");
         System.out.println("a1 power: "+ a1.power );
-        a1.turnOn();;
+        a1.turnOn();
         System.out.println("a1 after turnOn: "+ a1.power );
         a1.turnOff();
         System.out.println("a1 after turnOff: "+ a1.power );
