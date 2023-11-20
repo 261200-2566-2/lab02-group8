@@ -21,6 +21,15 @@ public class AirPurifier {
         int index = allModel.indexOf(model);
         return numberOfEachModel.get(index);
     }
+    void showDisplay(){
+        System.out.println("______________________" );
+        System.out.println("  SerialNo : "+serialNo);
+        System.out.println("     Model : "+model);
+        if(power == true) System.out.println("     Power : on" );
+        else System.out.println("     Power : off" );
+        System.out.println("      Mode : "+mode );
+        System.out.println("______________________" );
+    }
     void turnOn(){ power = true; }
     void turnOff(){ power = false; }
     void toggleOnOff(){ power = !power;}
@@ -45,10 +54,10 @@ public class AirPurifier {
         AirPurifier a2 = new AirPurifier("ProMax","002");
         AirPurifier a3 = new AirPurifier("ProMax","003");
         AirPurifier a4 = new AirPurifier("ProMaxPlus","004");
-        System.out.println("a1 [ model : "+ a1.model + " " +", serialNo : "+a1.serialNo+ " ]");
-        System.out.println("a2 [ model : "+ a2.model + " " +", serialNo : "+a2.serialNo+ " ]");
-        System.out.println("a3 [ model : "+ a3.model + " " +", serialNo : "+a3.serialNo+ " ]");
-        System.out.println("a4 [ model : "+ a4.model + " " +", serialNo : "+a4.serialNo+ " ]");
+        a1.showDisplay();
+        a2.showDisplay();
+        a3.showDisplay();
+        a4.showDisplay();
         System.out.println(" ");
         System.out.println("ModelCount = "+ AirPurifier.modelCount() );
         System.out.println("MostPopular = "+ AirPurifier.mostPopularModel() );
