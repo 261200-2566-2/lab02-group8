@@ -25,7 +25,6 @@ public class lab2 {
         a1.toggleOnOff();
         System.out.println("a1 after toggleOnOff: "+ a1.power );
         System.out.println(" ");
-        System.out.println("a2 mode: "+ a2.mode );
         a2.setMode("sleep");
         System.out.println("a2 after changeMode(sleep): ");
         a2.showDisplay();

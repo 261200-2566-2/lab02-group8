@@ -3,10 +3,10 @@ import java.util.Collections;
 import java.util.Scanner;
 
 public class AirPurifier {
-    String model ;
-    String serialNo;
+    private String model ;
+    private String serialNo;
     boolean power = false;
-    String mode = "auto";
+    private String mode = "auto";
     private int speedFan = 1;
     int pm = (int) (Math.random() * 370) ;
     static ArrayList<String> allModel = new ArrayList<>();
